@@ -18,8 +18,9 @@ class RogueOperator {
 # Main testing logic
 #
 Describe "Run calculations given an operator" {
+    # Use this to store the written result of the
+    # Invoke-MathCalculation call.
     $output = @{value=$null}
-
     Mock Write-Host { $output.value = $Object }
 
     Context "When given a Multiplication operator" {

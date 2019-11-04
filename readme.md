@@ -28,6 +28,6 @@ Then, from a PowerShell prompt, you should be able to execute:
 
 ```powershell
 Import-Module PesterDemo
-$operator = Get-MathOperator Multiplication
+$operator = New-MathOperator Multiplication
 Invoke-MathCalculation -Operator $operator -X 10 -Y 10
 ```
